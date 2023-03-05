@@ -2,6 +2,7 @@ import { type AppType } from "next/app";
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 import NavBar from "~/components/NavBar";
+import Footer from "~/components/Footer";
 
 import { api } from "~/utils/api";
 
@@ -13,8 +14,10 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <NavBar />
-      <Component {...pageProps} />
+      <NavBar>
+        <Component {...pageProps} />
+        <Footer />
+      </NavBar>
     </SessionProvider>
   );
 };
