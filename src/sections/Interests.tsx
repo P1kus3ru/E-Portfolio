@@ -7,16 +7,16 @@ const Interests = () => {
   let counter = 0;
     return (
       <>
-      <section className="w-full p-20" id="interests">
+      <section className="w-full py-20" id="interests">
           <div className="flex flex-col items-center text-center">
               <h2 className="text-5xl font-bold mb-5">Interesses</h2>
-              <div className="carousel w-1/2">
+              <div className="carousel max-w-5xl">
                 {interests.map((x)=> {
                   counter++;
                   console.log((((counter+interests.length)%interests.length)-1));
                   
                   return (<>
-                  <div id={"slide" + counter.toString()} className="carousel-item flex flex-col relative w-full gap-3">
+                  <div id={"slide" + counter.toString()} className="carousel-item flex flex-col relative w-full gap-3 justify-between">
                     <h1 className="text-2xl">{x.name}</h1>
                     <p className="">{x.desc}</p>
                     <div className="">
