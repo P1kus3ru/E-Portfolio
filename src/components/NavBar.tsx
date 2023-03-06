@@ -14,7 +14,7 @@ const NavBar = ({ children } : NavBarProps) => {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
             <div className="drawer-content flex flex-col">
                 <div className="flex flex-col">
-                    <div className="w-full navbar bg-base-200 sticky top-0">
+                    <div className="w-full navbar bg-base-200 fixed top-0 z-10">
                         <div className="navbar-start">
                             <div className="flex-none lg:hidden">
                                 <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
@@ -23,7 +23,7 @@ const NavBar = ({ children } : NavBarProps) => {
                             </div>
                             <a className="normal-case text-xl mx-auto">Jona De Neve</a>
                         </div>
-                        <div className="navbar-center hidden md:block">
+                        <div className="hidden md:block flex-grow">
                             <div className="flex-none">
                                 <ul className="menu menu-horizontal">
                                     <li><a href="#about">About</a></li>
@@ -34,8 +34,10 @@ const NavBar = ({ children } : NavBarProps) => {
                                 </ul>
                             </div>
                         </div>
-                        {/* <div className="navbar-end hidden">
-                        </div> */}
+                        <div className="hidden md:inline flex-shrink justify-end">
+                            <button className="btn btn-circle btn-ghost">L</button>
+                            <button className="btn btn-circle btn-ghost">T</button>
+                        </div>
                     </div>
                 </div>
                 {children}

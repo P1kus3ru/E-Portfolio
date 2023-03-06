@@ -6,18 +6,19 @@ const About = () => {
     const socials = useSocials();
     return (
       <>
-        <section className="flex flex-col md:flex-row justify-around" id="about">
+        <section className="hero min-h-full" id="about">
+          <div className="hero-content flex-col lg:flex-row md:gap-10">
             <Image 
             src={avatar}
             alt="Profile picture" 
             className="" 
             />
-            <div className="mt-auto">
-                <h1 className="mb-0 text-5xl md:text-8xl font-bold uppercase md:mt-auto">
+            <div className="">
+                <h1 className="mb-0 text-5xl md:text-7xl font-bold uppercase md:mt-auto">
                     Jona
                     <span className="text-primary"> De Neve</span>
                 </h1>
-                <div className="text-lg font-bold text-secondary mb-5 md:mb-0">
+                <div className="text-lg font-bold text-secondary mb-5 md:mb-2">
                     <a href="../../public/CV_DeNeveJona_2022.pdf" download="CV_JonaDeNeve_Algemeen">CV</a> ·
                     Veldestraat 27 Merendree 9850 · 26/03/2002  · 0491599081 ·
                     <a href="mailto:jona.de.neve@gmail.com"> jona.de.neve@gmail.com</a>
@@ -33,6 +34,7 @@ const About = () => {
                   ))} 
                 </div>
             </div>
+          </div>
         </section>
       </>
     );
