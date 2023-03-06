@@ -1,6 +1,6 @@
 
 
-export default function useExperience() {
+export default function useProjects() {
     return [
       {
         type: 'Web development',

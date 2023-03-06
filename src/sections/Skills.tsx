@@ -1,4 +1,7 @@
+import useSkills from "~/hooks/useSkills";
+
 const Skills = () => {
+  const {langs, proglangs} = useSkills();
     return (
       <>
       <section className="py-20" id="skills">

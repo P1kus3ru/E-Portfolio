@@ -6,7 +6,7 @@ const About = () => {
     const socials = useSocials();
     return (
       <>
-        <section className="hero min-h-full" id="about">
+        <section className="hero min-h-full py-16" id="about">
           <div className="hero-content flex-col lg:flex-row md:gap-10">
             <Image 
             src={avatar}

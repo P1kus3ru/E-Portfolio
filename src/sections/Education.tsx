@@ -1,3 +1,5 @@
+import Card from "~/components/Card";
+
 function useEducation() {
   return [
     {
@@ -23,15 +25,7 @@ const Education = () => {
                 <div className="flex flex-wrap md:justify-center gap-5">
                 {educations.map((x) => (
                   <>
-                    <div className="card max-w-lg bg-base-300 shadow-xl">
-                        <div className="card-body">
-                            <div className="flex flex-col">
-                                <div className="card-title mb-3 md:flex-grow">{x.school}</div>
-                                <div className="flex-shrink-0 text-accent font-bold">{x.date}</div>
-                            </div>
-                            <p>{x.course}</p>
-                        </div>
-                    </div>
+                    <Card title={x.course} date={x.date} content={x.school} />
                   </>
                 ))}
               </div>

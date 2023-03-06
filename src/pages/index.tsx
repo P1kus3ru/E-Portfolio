@@ -5,6 +5,7 @@ import Education from "~/sections/Education";
 import Experience from "~/sections/Experience";
 import Interests from "~/sections/Interests";
 import Skills from "~/sections/Skills";
+import Projects from "~/sections/Projects";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,8 @@ const Home: NextPage = () => {
         <About />
         <div className="divider"></div>
         <Experience />
+        <div className="divider"></div>
+        <Projects />
         <div className="divider"></div>
         <Education />
         <div className="divider"></div>
