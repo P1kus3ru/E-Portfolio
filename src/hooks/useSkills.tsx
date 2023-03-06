@@ -1,6 +1,10 @@
 import { FaPython, FaReact, FaHtml5, FaJava, FaCss3Alt, FaGitAlt, FaJs, FaNodeJs, FaSwift, FaPhp } from 'react-icons/fa';
 import { SiKotlin, SiCsharp } from 'react-icons/si';
 
+interface IconProps  { 
+    size?: number
+  }
+
 export default function useSkills() {
     const langs = [
         {
@@ -19,51 +23,51 @@ export default function useSkills() {
     const proglangs = [
         {
           name: 'React',
-          Icon: <FaReact />,
+          Icon: ({size}:IconProps) => <FaReact size={size}/>,
         },
         {
           name: 'HTML5',
-          Icon: <FaHtml5 />,
+          Icon: ({size}:IconProps) => <FaHtml5 size={size}/>,
         },
         {
           name: 'JavaScript',
-          Icon: <FaJs />,
+          Icon: ({size}:IconProps) => <FaJs size={size}/>,
         },
         {
           name: 'NodeJs',
-          Icon: <FaNodeJs />,
+          Icon: ({size}:IconProps) => <FaNodeJs size={size}/>,
         },
         {
           name: 'Java',
-          Icon: <FaJava />,
+          Icon: ({size}:IconProps) => <FaJava size={size}/>,
         },
         {
           name: 'CSS3',
-          Icon: <FaCss3Alt />,
+          Icon: ({size}:IconProps) => <FaCss3Alt size={size}/>,
         },
         {
           name: 'Git',
-          Icon: <FaGitAlt />,
+          Icon: ({size}:IconProps) => <FaGitAlt size={size}/>,
         },
         {
           name: 'Python',
-          Icon: <FaPython />,
+          Icon: ({size}:IconProps) => <FaPython size={size}/>,
         },
         {
           name: 'Swift',
-          Icon: <FaSwift />,
+          Icon: ({size}:IconProps) => <FaSwift size={size}/>,
         },
         {
           name: 'Kotlin',
-          Icon: <SiKotlin />,
+          Icon: ({size}:IconProps) => <SiKotlin size={size}/>,
         },
         {
           name: 'C#',
-          Icon: <SiCsharp />,
+          Icon: ({size}:IconProps) => <SiCsharp size={size}/>,
         },
         {
           name: 'PHP',
-          Icon: <FaPhp />,
+          Icon: ({size}:IconProps) => <FaPhp size={size}/>,
         },
     ];
     return {langs, proglangs}

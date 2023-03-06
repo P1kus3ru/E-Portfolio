@@ -11,7 +11,7 @@ const About = () => {
             <Image 
             src={avatar}
             alt="Profile picture" 
-            className="" 
+            className="mask mask-squircle" 
             />
             <div className="">
                 <h1 className="mb-0 text-5xl md:text-7xl font-bold uppercase md:mt-auto">
