@@ -26,7 +26,7 @@ const Interests = () => {
                       className="w-full" 
                       />
                       <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href={"#slide" + (((counter+interests.length)%interests.length)-1).toString()} className="btn btn-circle opacity-75">❮</a> 
+                        <a href={"#slide" + ((counter + interests.length)%interests.length).toString()} className="btn btn-circle opacity-75">❮</a> 
                         <a href={"#slide" + ((counter%interests.length)+1).toString()} className="btn btn-circle opacity-75">❯</a>
                       </div>
                     </div>
