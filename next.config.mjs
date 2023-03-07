@@ -1,7 +1,9 @@
 /** @type {import("next").NextConfig} */
 
 const config = {
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/E-Portfolio/' : '',
+  basePath: '/E-Portfolio',
+  assetPrefix: '/E-Portfolio/',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/E-Portfolio/' : '',
   images: {
     unoptimized: true,
   },
@@ -9,6 +11,11 @@ const config = {
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
+  },
+  exportPathMap: async function () {
+    return {
+      '/': { page: '/' },
+    }
   },
 };
 
