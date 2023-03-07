@@ -27,12 +27,12 @@ const NavBar = ({ children } : NavBarProps) => {
                         <div className="hidden md:block flex-grow">
                             <div className="flex-none">
                                 <ul className="menu menu-horizontal">
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#experience">Experience</a></li>
-                                    <li><a href="#projects">Projects</a></li>
-                                    <li><a href="#education">Education</a></li>
-                                    <li><a href="#skills">Skills</a></li>
-                                    <li><a href="#interests">Interests</a></li>
+                                    <li key="about"><a href="#about">About</a></li>
+                                    <li key="experience"><a href="#experience">Experience</a></li>
+                                    <li key="projects"><a href="#projects">Projects</a></li>
+                                    <li key="education"><a href="#education">Education</a></li>
+                                    <li key="skills"><a href="#skills">Skills</a></li>
+                                    <li key="interests"><a href="#interests">Interests</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -60,12 +60,12 @@ const NavBar = ({ children } : NavBarProps) => {
                     </div>
                     <div className="divider"></div>
                     <div className='grow flex flex-col'>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#interests">Interests</a></li>
+                        <li key="about"><a href="#about">About</a></li>
+                        <li key="experience"><a href="#experience">Experience</a></li>
+                        <li key="projects"><a href="#projects">Projects</a></li>
+                        <li key="education"><a href="#education">Education</a></li>
+                        <li key="skills"><a href="#skills">Skills</a></li>
+                        <li key="interests"><a href="#interests">Interests</a></li>
                     </div>
                     <div className="divider"></div>
                     <div className='flex gap-3 justify-around'>
