@@ -1,8 +1,9 @@
+// @ts-check
 /** @type {import("next").NextConfig} */
-module.exports = {
-  // basePath: '/E-Portfolio',
-  // assetPrefix: '/E-Portfolio/',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/E-Portfolio/' : '',
+
+const config = {
+  basePath: '/E-Portfolio',
+  assetPrefix: `https://P1kus3ru.github.io`,
   images: {
     unoptimized: true,
   },
@@ -12,8 +13,10 @@ module.exports = {
     }
   },
   reactStrictMode: true,
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
+  // i18n: {
+  //   locales: ["en"],
+  //   defaultLocale: "en",
+  // },
 };
+
+export default config;
