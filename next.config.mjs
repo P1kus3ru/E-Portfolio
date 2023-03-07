@@ -1,8 +1,8 @@
 /** @type {import("next").NextConfig} */
+
 module.exports = {
-  // basePath: '/E-Portfolio',
-  // assetPrefix: '/E-Portfolio/',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/E-Portfolio/' : '',
+  basePath: '/E-Portfolio',
+  assetPrefix: `https://P1kus3ru.github.io`,
   images: {
     unoptimized: true,
   },
