@@ -1,7 +1,7 @@
 /** @type {import("next").NextConfig} */
 
 const config = {
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/your-github-repo-name/' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/E-Portfolio/' : '',
   images: {
     unoptimized: true,
   },
