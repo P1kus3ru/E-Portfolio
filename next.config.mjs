@@ -1,6 +1,7 @@
+// @ts-check
 /** @type {import("next").NextConfig} */
 
-module.exports = {
+const config = {
   basePath: '/E-Portfolio',
   assetPrefix: `https://P1kus3ru.github.io`,
   images: {
@@ -12,8 +13,10 @@ module.exports = {
     }
   },
   reactStrictMode: true,
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
+  // i18n: {
+  //   locales: ["en"],
+  //   defaultLocale: "en",
+  // },
 };
+
+export default config;
