@@ -3,8 +3,8 @@
 const config = {
   reactStrictMode: true,
   i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+    locales: ["en-GB", 'fr', 'nl-BE'],
+    defaultLocale: "en-GB",
   },
 };
 export default config;
