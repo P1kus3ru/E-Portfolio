@@ -12,6 +12,7 @@ const About = () => {
             src={avatar}
             alt="Profile picture" 
             className="mask mask-squircle" 
+            priority
             />
             <div className="">
                 <h1 className="mb-0 text-5xl md:text-7xl font-bold uppercase md:mt-auto">
@@ -27,7 +28,7 @@ const About = () => {
                 <div className="flex gap-5 justify-center md:justify-start">
                   {socials.map((x) => (
                     <>
-                    <a href={x.link} target="_blank" rel="noreferrer">
+                    <a key={x.name} href={x.link} target="_blank" rel="noreferrer">
                         <x.Icon size={30}/>
                     </a>
                     </>
