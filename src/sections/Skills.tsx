@@ -7,7 +7,7 @@ const Skills = () => {
       <section className="py-20" id="skills">
           <div className="text-center">
               <h2 className="text-5xl font-bold mb-5">Skills</h2>
-              <div className="flex gap-5">
+              <div className="flex flex-wrap gap-5">
                 <div className="card w-96 bg-base-200 dark:bg-neutral shadow-xl hover:bg-base-300 dark:hover:bg-base-200">
                   <div className="card-body">
                     <h2 className="card-title">Talen</h2>

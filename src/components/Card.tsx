@@ -7,7 +7,7 @@ interface CardProps {
 const Card = ({title, date, content}: CardProps) => {
     return (
         <>
-        <div className="card max-w-lg bg-base-200 dark:bg-neutral shadow-xl hover:bg-base-300 dark:hover:bg-base-200">
+        <div className="card max-w-lg bg-base-200 dark:bg-neutral shadow-xl hover:bg-base-300 dark:hover:bg-base-200 animate-on-scroll">
             <div className="card-body">
                 <div className="flex flex-col items-center gap-2">
                     <div className="text-primary dark:text-accent font-bold">{date}</div>

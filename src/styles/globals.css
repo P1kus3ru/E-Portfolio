@@ -5,14 +5,14 @@
 .animate-on-scroll {
     opacity: 0;
     filter: blur(5px);
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     transition: all 1s;
 }
 
 .visible {
     opacity: 1;
     filter: blur(0);
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .contentCard:nth-child(2) {
