@@ -16,7 +16,7 @@ const Interests = () => {
                   console.log((((counter+interests.length)%interests.length)-1));
                   
                   return (<>
-                  <div id={"slide" + counter.toString()} className="carousel-item flex flex-col relative w-full gap-3 justify-between">
+                  <div key={x.name} id={"slide" + counter.toString()} className="carousel-item flex flex-col relative w-full gap-3 justify-between">
                     <h1 className="text-2xl">{x.name}</h1>
                     <p className="">{x.desc}</p>
                     <div className="">

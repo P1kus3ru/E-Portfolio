@@ -25,7 +25,7 @@ const Education = () => {
                 <div className="flex flex-wrap md:justify-center gap-5">
                 {educations.map((x) => (
                   <>
-                    <Card title={x.course} date={x.date} content={x.school} />
+                    <Card key={x.course} title={x.course} date={x.date} content={x.school} />
                   </>
                 ))}
               </div>
