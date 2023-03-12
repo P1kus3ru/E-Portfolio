@@ -5,7 +5,7 @@ const Projects = () => {
     const types = useProjects();
     return (
       <>
-      <section className="py-20" id="projects">
+      <section className="py-20 w-full" id="projects">
           <div className="text-center">
               <h2 className="text-5xl font-bold mb-5">Projecten</h2>
               {types.map((x) => (

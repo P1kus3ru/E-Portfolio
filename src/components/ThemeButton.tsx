@@ -6,6 +6,7 @@ const ThemeButton = () => {
     const [theme, setTheme] = React.useState('business');
     const toggleTheme = () => {
         setTheme(theme === 'business' ? 'corporate' : 'business');
+        // setTheme(theme === 'retrowaveDark' ? 'retrowave' : 'retrowaveDark');
     };
     // initially set the theme and "listen" for changes to apply them to the HTML tag
     React.useEffect(() => {
