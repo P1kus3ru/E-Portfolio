@@ -1,4 +1,4 @@
-import Tnok from '../../public/images/GalaTnok.png';
+import Tnok from '../../public/images/GalaTnok.jpg';
 import Loko from '../../public/images/Loko.jpg'
 
 export default function useInterests() {
