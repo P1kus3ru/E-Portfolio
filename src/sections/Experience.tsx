@@ -5,7 +5,7 @@ const Experience = () => {
     const experience = useExperiences();
     return (
       <>
-      <section className="py-20" id="experience">
+      <section className="py-20 w-full" id="experience">
           <div className="text-center">
               <h2 className="text-5xl font-bold mb-5">Ervaring</h2>
                 <div className="flex flex-wrap md:justify-center gap-5">

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -7,7 +8,53 @@ module.exports = {
   darkMode: 'class',
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["corporate", "business"],
+    themes: [
+      "corporate", "business",
+    // {
+    //   retrowave: {
+    //     primary: '#F36688',
+    //     'primary-focus': '#a3e0f2',
+    //     'primary-content': '#261A5A',
+    //     secondary: '#DA3182',
+    //     'secondary-focus': '#9E316B',
+    //     'secondary-content': '#e6e9ea',
+    //     accent: '#684DDA',
+    //     'accent-focus': '#bffcb5',
+    //     'accent-content': '#261A5A',
+    //     neutral: '#261A5A',
+    //     'neutral-focus': '#5033DB',
+    //     'neutral-content': '#e6e9ea',
+    //     'base-content': '#e6e9ea',
+    //     'base-100': '#1A1044',
+    //     info: '#a3e0f2',
+    //     success: '#bffcb5',
+    //     warning: '#ffe066',
+    //     error: '#ffa8a8',
+    //   },
+    // },
+    // {
+    //   retrowaveDark: {
+    //     primary: '#F36688',
+    //     'primary-focus': '#a3e0f2',
+    //     'primary-content': '#261A5A',
+    //     secondary: '#DA3182',
+    //     'secondary-focus': '#9E316B',
+    //     'secondary-content': '#e6e9ea',
+    //     accent: '#684DDA',
+    //     'accent-focus': '#bffcb5',
+    //     'accent-content': '#261A5A',
+    //     neutral: '#261A5A',
+    //     'neutral-focus': '#5033DB',
+    //     'neutral-content': '#e6e9ea',
+    //     'base-content': '#e6e9ea',
+    //     'base-100': '#1A1044',
+    //     info: '#a3e0f2',
+    //     success: '#bffcb5',
+    //     warning: '#ffe066',
+    //     error: '#ffa8a8',
+    //   },
+    // },
+  ],
     darkTheme: "business",
   },
 };

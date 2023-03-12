@@ -12,7 +12,7 @@ const About = () => {
   }, []);
     return (
       <>
-        <section className="hero min-h-full py-16" id="about">
+        <section className="hero min-h-full py-16 w-full" id="about">
           <div ref={refHero} className="hero-content flex-col lg:flex-row md:gap-10">
             <Image 
             src={avatar}

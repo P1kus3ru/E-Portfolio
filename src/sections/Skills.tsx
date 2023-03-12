@@ -4,10 +4,10 @@ const Skills = () => {
   const {langs, proglangs} = useSkills();
     return (
       <>
-      <section className="py-20" id="skills">
+      <section className="py-20 w-full" id="skills">
           <div className="text-center">
               <h2 className="text-5xl font-bold mb-5">Skills</h2>
-              <div className="flex flex-wrap gap-5">
+              <div className="flex flex-wrap gap-5 justify-center">
                 <div className="card w-96 bg-base-200 dark:bg-neutral shadow-xl hover:bg-base-300 dark:hover:bg-base-200 animate-on-scroll">
                   <div className="card-body">
                     <h2 className="card-title">Talen</h2>
