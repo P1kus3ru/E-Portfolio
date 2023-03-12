@@ -1,17 +1,23 @@
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 import useSocials from "~/hooks/useSocials";
 import avatar from '../../public/images/Avatar.png';
 
 const About = () => {
     const socials = useSocials();
+    const refHero = useRef<HTMLDivElement>(null)
+    
+  useEffect(() => {
+    console.log(refHero.current?.offsetHeight);
+  }, []);
     return (
       <>
         <section className="hero min-h-full py-16" id="about">
-          <div className="hero-content flex-col lg:flex-row md:gap-10">
+          <div ref={refHero} className="hero-content flex-col lg:flex-row md:gap-10">
             <Image 
             src={avatar}
             alt="Profile picture" 
-            className="mask mask-squircle" 
+            className="mask mask-squircle max-w-2xl lg:w-1/2"
             priority
             />
             <div className="">
