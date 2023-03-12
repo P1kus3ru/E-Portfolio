@@ -11,7 +11,7 @@ const Experience = () => {
                 <div className="flex flex-wrap md:justify-center gap-5">
                 {experience.map((x) => (
                   <>
-                    <Card title={x.function + " bij " + x.name} date={x.date} content={x.desc} />
+                    <Card key={x.name} title={x.function + " bij " + x.name} date={x.date} content={x.desc} />
                   </>
                 ))}
               </div>

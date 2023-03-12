@@ -52,7 +52,8 @@ const NavBar = ({ children } : NavBarProps) => {
                             <div className="w-24 rounded-xl">
                                 <Image 
                                 src={avatar}
-                                alt="Profile picture"  
+                                alt="Profile picture"
+                                priority
                                 />
                             </div>
                         </div>
@@ -71,7 +72,7 @@ const NavBar = ({ children } : NavBarProps) => {
                     <div className='flex gap-3 justify-around'>
                         {socials.map((x) => (
                             <>
-                            <a href={x.link} target="_blank" rel="noreferrer">
+                            <a key={x.name} href={x.link} target="_blank" rel="noreferrer">
                                 <x.Icon size={25}/>
                             </a>
                             </>
