@@ -6,7 +6,7 @@ export default function useInterests() {
     return [
       {
         name: 'Tomo no Kai',
-        desc: 'De studenten vereniging van de richting Japanologie aan de UGent. ',
+        desc: 'De studenten vereniging van de richting Japanologie aan de UGent waar ik in het preasidium de functie van secretaris uitvoer. ',
         img: {
             src: Tnok,
             alt:'Gala TnoK 2023',
