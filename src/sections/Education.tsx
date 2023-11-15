@@ -3,9 +3,14 @@ import Card from "~/components/Card";
 function useEducation() {
   return [
     {
+      school: 'Odisee',
+      course: 'Bachelor Electronica-ICT',
+      date: 'September 2023 - Heden',
+    },
+    {
       school: 'HOGENT',
       course: 'Bachelor Toegepaste Informatica',
-      date: 'September 2020 - Heden',
+      date: 'September 2020 - Augustus 2023',
     },
     {
       school: 'Leiepoort campus Sint-Hendrik Deinze',
