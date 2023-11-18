@@ -3,14 +3,14 @@ import Card from "~/components/Card";
 function useEducation() {
   return [
     {
-      school: 'HOGENT',
-      course: 'Bachelor Toegepaste Informatica',
-      date: 'September 2020 - Heden',
+      school: 'Odisee',
+      course: 'Bachelor Electronica-ICT',
+      date: 'September 2023 - Heden',
     },
     {
-      school: 'Leiepoort campus Sint-Hendrik Deinze',
-      course: 'ASO - Wetenschappen-Wiskunde',
-      date: 'September 2014 - Juni 2020',
+      school: 'HOGENT',
+      course: 'Bachelor Toegepaste Informatica',
+      date: 'September 2020 - Augustus 2023',
     },
   ]
 }
