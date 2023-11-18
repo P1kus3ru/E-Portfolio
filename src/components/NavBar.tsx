@@ -24,7 +24,7 @@ const NavBar = ({ children } : NavBarProps) => {
                             </div>
                             <a className="normal-case text-xl mx-auto">Jona De Neve</a>
                         </div>
-                        <div className="hidden md:block flex-grow">
+                        <div className="hidden lg:block flex-grow">
                             <div className="flex-none">
                                 <ul className="menu menu-horizontal">
                                     <li key="about"><a href="#about">About</a></li>
@@ -36,7 +36,7 @@ const NavBar = ({ children } : NavBarProps) => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="hidden md:inline flex-shrink justify-end">
+                        <div className="hidden lg:flex justify-end">
                             <ThemeButton />
                             <button className="btn btn-circle btn-ghost">L</button>
                         </div>

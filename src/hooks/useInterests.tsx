@@ -22,7 +22,7 @@ export default function useInterests() {
       },
       {
         name: 'Judoclub Nevele',
-        desc: 'Sinds mijn zes jaar ben ik ook lid bij judoclub Nevele. Zo ga ik 2 keer in de week naar de trainingen. Ik behaalde al een bruine gorden en ben op weg naar zwart.',
+        desc: 'Sinds mijn zes jaar ben ik ook lid bij judoclub Nevele. Zo ga ik 2 keer in de week naar de trainingen. Ik behaalde al een bruine gordel en ben op weg naar zwart.',
         img: {
             src: Judo,
             alt:'Judo',

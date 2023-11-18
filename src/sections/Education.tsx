@@ -12,11 +12,6 @@ function useEducation() {
       course: 'Bachelor Toegepaste Informatica',
       date: 'September 2020 - Augustus 2023',
     },
-    {
-      school: 'Leiepoort campus Sint-Hendrik Deinze',
-      course: 'ASO - Wetenschappen-Wiskunde',
-      date: 'September 2014 - Juni 2020',
-    },
   ]
 }
 

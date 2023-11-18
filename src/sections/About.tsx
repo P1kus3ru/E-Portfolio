@@ -14,11 +14,11 @@ const About = () => {
   return (
     <>
       <section className="hero min-h-full py-16 w-full" id="about">
-        <div ref={refHero} className="hero-content flex-col lg:flex-row md:gap-10">
+        <div ref={refHero} className="hero-content flex-col md:flex-row md:gap-10">
           <Image 
           src={avatar}
           alt="Profile picture" 
-          className="mask mask-squircle max-w-2xl lg:w-1/2"
+          className="mask mask-squircle w-full md:max-w-2xl md:w-1/2"
           priority
           />
           <div className="">
@@ -31,7 +31,7 @@ const About = () => {
                   Veldestraat 27 Merendree 9850 · 26/03/2002  · 0491599081 ·
                   <a href="mailto:jona.de.neve@gmail.com"> jona.de.neve@gmail.com</a>
               </div>
-              <p className="mb-5">Student in de IT, 3de modeltraject Toegepaste Informatica aan de Hogent.</p>
+              <p className="mb-5">Student Elektronica-ICT bij Odisee</p>
               <div className="flex gap-5 justify-center md:justify-start">
                 {socials.map((x) => (
                   <>
