@@ -3,6 +3,16 @@
 export default function useProjects() {
     return [
       {
+        type: 'Elektronica',
+        projects: [
+            {
+                name: "Simon Says met Arduino UNO",
+                desc: "Simon says met Arduino. In dit project moesten we een Simon Says spel maken met behulp van een Arduino. Hierbij moesten we gebruik maken van verschillende elektronische componenten zoals LED's, knoppen en een buzzer.",
+                date: "February 2024 - Juni 2024",
+            },
+        ],
+      },
+      {
         type: 'Web development',
         projects: [
             {

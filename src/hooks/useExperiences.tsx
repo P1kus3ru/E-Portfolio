@@ -2,8 +2,14 @@ export default function useExperiences() {
     return [
       {
         name: 'Codefever',
+        function: 'Leraar',
+        desc: 'Na assisteren geef ik nu zelf programmeerlessen aan jongeren.',
+        date: 'September 2023 - Heden',
+      },
+      {
+        name: 'Codefever',
         function: 'Assistent',
-        desc: 'Hier assisteer ik de leraar bij het geven van programeerlessen.',
+        desc: 'Naast zelf les te geven, help ik nog steeds bij het assisteren van andere lessen.',
         date: 'September 2022 - Heden',
       },
       {

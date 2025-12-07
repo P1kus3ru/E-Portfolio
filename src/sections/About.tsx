@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import useSocials from "~/hooks/useSocials";
-import avatar from '../../public/images/Avatar.png';
 
 const About = () => {
   const socials = useSocials();
@@ -16,8 +15,10 @@ const About = () => {
       <section className="hero min-h-full py-16 w-full" id="about">
         <div ref={refHero} className="hero-content flex-col md:flex-row md:gap-10">
           <Image 
-          src={avatar}
-          alt="Profile picture" 
+          src="/images/Avatar.png"
+          alt="Profile picture"
+          width={500}
+          height={500}
           className="mask mask-squircle w-full md:max-w-2xl md:w-1/2"
           priority
           />
@@ -27,7 +28,7 @@ const About = () => {
                   <span className="text-primary"> De Neve</span>
               </h1>
               <div className="text-lg font-bold text-secondary mb-5 md:mb-2">
-                  <a href="../../public/CV_DeNeveJona_2022.pdf" download="CV_JonaDeNeve_Algemeen">CV</a> ·
+                  <a href="/CV_DeNeveJona_2022.pdf" download="CV_JonaDeNeve_2022">CV</a> ·
                   Veldestraat 27 Merendree 9850 · 26/03/2002  · 0491599081 ·
                   <a href="mailto:jona.de.neve@gmail.com"> jona.de.neve@gmail.com</a>
               </div>

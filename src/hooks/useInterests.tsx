@@ -6,7 +6,7 @@ export default function useInterests() {
     return [
       {
         name: 'Tomo no Kai',
-        desc: 'De studenten vereniging van de richting Japanologie aan de UGent waar ik in het preasidium de functie van secretaris uitvoer. ',
+        desc: 'De studenten vereniging van de richting Japanologie aan de UGent waar ik in het preasidium de functie van Web-Master uitvoer. ',
         img: {
             src: Tnok,
             alt:'Gala TnoK 2023',
@@ -22,7 +22,7 @@ export default function useInterests() {
       },
       {
         name: 'Judoclub Nevele',
-        desc: 'Sinds mijn zes jaar ben ik ook lid bij judoclub Nevele. Zo ga ik 2 keer in de week naar de trainingen. Ik behaalde al een bruine gordel en ben op weg naar zwart.',
+        desc: 'Sinds mijn zes jaar ben ik ook lid bij judoclub Nevele. Zo ga ik 2 keer in de week naar de trainingen. Hier behaalde ik de 1e Dan graad (Zwarte gordel).',
         img: {
             src: Judo,
             alt:'Judo',
