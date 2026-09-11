@@ -99,7 +99,7 @@ const Resume = () => {
         <main className="flex-1 p-[12mm] flex flex-col gap-8">
           <section>
             <h2 className="text-lg font-bold uppercase tracking-wide text-blue-700 border-b-2 border-blue-700 pb-1 mb-4">
-              {t.nav.education}
+              {t.nav.qualifications}
             </h2>
             <div className="flex flex-col gap-4">
               {qualifications.map((x) => (

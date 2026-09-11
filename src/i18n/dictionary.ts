@@ -3,7 +3,7 @@ export interface Dictionary {
     about: string;
     experience: string;
     projects: string;
-    education: string;
+    qualifications: string;
     skills: string;
     interests: string;
     resume: string;

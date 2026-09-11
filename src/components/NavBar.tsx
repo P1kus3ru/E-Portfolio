@@ -22,7 +22,7 @@ const NavBar = ({ children } : NavBarProps) => {
         { href: "/", label: t.nav.about },
         { href: "/experience", label: t.nav.experience },
         { href: "/projects", label: t.nav.projects },
-        { href: "/education", label: t.nav.education },
+        { href: "/qualifications", label: t.nav.qualifications },
         { href: "/skills", label: t.nav.skills },
         { href: "/interests", label: t.nav.interests },
         { href: "/resume", label: t.nav.resume },
