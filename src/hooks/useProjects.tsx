@@ -10,6 +10,16 @@ export default function useProjects() {
                 desc: "Simon says met Arduino. In dit project moesten we een Simon Says spel maken met behulp van een Arduino. Hierbij moesten we gebruik maken van verschillende elektronische componenten zoals LED's, knoppen en een buzzer.",
                 date: "February 2024 - Juni 2024",
             },
+            {
+                name: "Japanse LED Lamp",
+                desc: "Voor het vak 'Vermogenelektronica' maakte ik een Japanse LED lamp. Hierbij moesten we een hoog vermogen LED aansturen.",
+                date: "Oktober 2025 - December 2025",
+            },
+            {
+                name: "Universele kabeltester",
+                desc: "Een universele kabeltester die ontworpen is om de functionaliteit van verschillende soorten kabels te testen.",
+                date: "Februari 2026 - Juni 2026",
+            },
         ],
       },
       {
@@ -62,7 +72,7 @@ export default function useProjects() {
             },
             {
                 name: "Hogent project 'MADiOS'",
-                desc: "Tijdens het 3de jaar van de opleiding Toegepaste informatica aan de HoGent heb ik aan de hand van Swift een Squirdle iOS app voor Delaware in elkaar gestoken. Dit is een spel gebaseerd op de gelijknamige browsergame.",
+                desc: "Tijdens het 3de jaar van de opleiding Toegepaste informatica aan de HoGent heb ik aan de hand van Swift een Squirdle iOS app in elkaar gestoken. Dit is een spel gebaseerd op de gelijknamige browsergame.",
                 date: "Oktober 2022 - December 2022",
             },
         ],

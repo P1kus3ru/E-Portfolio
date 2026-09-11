@@ -14,7 +14,7 @@ export default function useInterests() {
       },
       {
         name: 'Lovendegemse Koperblazers (Loko)',
-        desc: 'De fanfare uit Lovendegem waar ik mij bij aansloot in het 2e leerjaar. Hier speel ik op de bugel. Sinds 2022 zit ik ook in het bestuur van loko waar ik vooral de technische zaken afhandel en de affiche maak.',
+        desc: 'De fanfare uit Lovendegem waar ik mij bij aansloot in het 2e leerjaar. Hier speel ik op de bugel. Sinds 2022 zit ik ook in het bestuur van loko waar ik vooral de technische zaken afhandel en soms de affiche maak.',
         img: {
             src: Loko,
             alt:'Loko 2019',

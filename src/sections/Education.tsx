@@ -5,7 +5,7 @@ function useEducation() {
     {
       school: 'Odisee',
       course: 'Bachelor Electronica-ICT',
-      date: 'September 2023 - Heden',
+      date: 'September 2023 - Juni 2026',
     },
     {
       school: 'HOGENT',

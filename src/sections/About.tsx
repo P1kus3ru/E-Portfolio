@@ -28,11 +28,11 @@ const About = () => {
                   <span className="text-primary"> De Neve</span>
               </h1>
               <div className="text-lg font-bold text-secondary mb-5 md:mb-2">
-                  <a href="/CV_DeNeveJona_2022.pdf" download="CV_JonaDeNeve_2022">CV</a> ·
-                  Veldestraat 27 Merendree 9850 · 26/03/2002  · 0491599081 ·
+                  <a href="/CV_DeNeveJona_2022.pdf" download="CV_JonaDeNeve_2022">CV</a> · 
+                  9850 Deinze · 26/03/2002 · 0491599081 ·
                   <a href="mailto:jona.de.neve@gmail.com"> jona.de.neve@gmail.com</a>
               </div>
-              <p className="mb-5">Student Elektronica-ICT bij Odisee</p>
+              <p className="mb-5"></p>
               <div className="flex gap-5 justify-center md:justify-start">
                 {socials.map((x) => (
                   <a key={x.name} href={x.link} target="_blank" rel="noreferrer">
