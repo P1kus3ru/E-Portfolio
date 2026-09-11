@@ -1,13 +1,15 @@
 import Card from "~/components/Card";
 import useProjects from "~/hooks/useProjects";
+import useTranslations from "~/i18n/useTranslations";
 
 const Projects = () => {
     const types = useProjects();
+    const t = useTranslations();
     return (
       <>
       <section className="py-20 w-full" id="projects">
           <div className="text-center">
-              <h2 className="text-5xl font-bold mb-5">Projecten</h2>
+              <h2 className="text-5xl font-bold mb-5">{t.nav.projects}</h2>
               {types.map((x) => (
                 <div key={x.type} className="flex flex-col md:flex-row justify-between mb-5">
                     <div className="flex-grow">

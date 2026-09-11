@@ -1,15 +1,17 @@
 import Image from "next/image";
 import useInterests from "~/hooks/useInterests";
+import useTranslations from "~/i18n/useTranslations";
 
 
 const Interests = () => {
   const interests = useInterests();
+  const t = useTranslations();
   let counter = -1;
     return (
       <>
       <section className="w-full py-20" id="interests">
           <div className="flex flex-col items-center text-center">
-              <h2 className="text-5xl font-bold mb-5">Interesses</h2>
+              <h2 className="text-5xl font-bold mb-5">{t.nav.interests}</h2>
               <div className="carousel max-w-5xl">
                 {interests.map((x)=> {
                   counter++;

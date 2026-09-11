@@ -3,27 +3,30 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 import useSocials from "~/hooks/useSocials";
+import useTranslations from "~/i18n/useTranslations";
 import avatar from '../../public/images/Avatar.png';
+import LanguageButton from "./LanguageButton";
 import ThemeButton from "./ThemeButton";
 
 interface NavBarProps  {
     children?: React.ReactNode
 }
 
-const navItems = [
-    { href: "/", label: "About" },
-    { href: "/experience", label: "Experience" },
-    { href: "/projects", label: "Projects" },
-    { href: "/education", label: "Education" },
-    { href: "/skills", label: "Skills" },
-    { href: "/interests", label: "Interests" },
-    { href: "/resume", label: "Resume" },
-];
-
 const NavBar = ({ children } : NavBarProps) => {
     const socials = useSocials();
     const router = useRouter();
+    const t = useTranslations();
     const drawerRef = useRef<HTMLInputElement>(null);
+
+    const navItems = [
+        { href: "/", label: t.nav.about },
+        { href: "/experience", label: t.nav.experience },
+        { href: "/projects", label: t.nav.projects },
+        { href: "/education", label: t.nav.education },
+        { href: "/skills", label: t.nav.skills },
+        { href: "/interests", label: t.nav.interests },
+        { href: "/resume", label: t.nav.resume },
+    ];
 
     const closeDrawer = () => {
         if (drawerRef.current) drawerRef.current.checked = false;
@@ -57,7 +60,7 @@ const NavBar = ({ children } : NavBarProps) => {
                         </div>
                         <div className="hidden lg:flex justify-end">
                             <ThemeButton />
-                            <button className="btn btn-circle btn-ghost">L</button>
+                            <LanguageButton />
                         </div>
                     </div>
                 </div>

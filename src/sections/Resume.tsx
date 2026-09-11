@@ -6,6 +6,7 @@ import useExperiences from "~/hooks/useExperiences";
 import usePersonalInfo from "~/hooks/usePersonalInfo";
 import useSkills from "~/hooks/useSkills";
 import useSocials from "~/hooks/useSocials";
+import useTranslations from "~/i18n/useTranslations";
 
 const Resume = () => {
   const info = usePersonalInfo();
@@ -13,6 +14,7 @@ const Resume = () => {
   const experience = useExperiences().filter((x) => x.important);
   const { langs, proglangs } = useSkills();
   const socials = useSocials();
+  const t = useTranslations();
 
   return (
     <div className="flex flex-col items-center pt-24 pb-10 print:pt-0 print:pb-0">
@@ -20,7 +22,7 @@ const Resume = () => {
         onClick={() => window.print()}
         className="btn btn-primary gap-2 mb-6 print:hidden"
       >
-        <FaDownload /> Download PDF
+        <FaDownload /> {t.sections.resumeDownloadButton}
       </button>
       <div className="w-[210mm] min-h-[297mm] bg-white text-neutral-900 shadow-xl print:shadow-none flex">
         <aside className="w-[70mm] shrink-0 bg-slate-800 text-white p-[10mm] flex flex-col gap-8">
@@ -62,7 +64,7 @@ const Resume = () => {
 
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-wide text-blue-300 mb-3">
-              Talen
+              {t.sections.languagesHeading}
             </h2>
             <div className="flex flex-col gap-2">
               {langs.map((x) => (
@@ -78,7 +80,7 @@ const Resume = () => {
 
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-wide text-blue-300 mb-3">
-              Programmeertalen
+              {t.sections.programmingLanguagesHeading}
             </h2>
             <div className="flex flex-wrap gap-2">
               {proglangs.map((x) => (
@@ -93,7 +95,7 @@ const Resume = () => {
         <main className="flex-1 p-[12mm] flex flex-col gap-8">
           <section>
             <h2 className="text-lg font-bold uppercase tracking-wide text-blue-700 border-b-2 border-blue-700 pb-1 mb-4">
-              Opleiding
+              {t.nav.education}
             </h2>
             <div className="flex flex-col gap-4">
               {educations.map((x) => (
@@ -110,13 +112,13 @@ const Resume = () => {
 
           <section>
             <h2 className="text-lg font-bold uppercase tracking-wide text-blue-700 border-b-2 border-blue-700 pb-1 mb-4">
-              Ervaring
+              {t.nav.experience}
             </h2>
             <div className="flex flex-col gap-4">
               {experience.map((x) => (
                 <div key={x.key}>
                   <div className="flex justify-between items-baseline">
-                    <div className="font-semibold">{x.function} bij {x.name}</div>
+                    <div className="font-semibold">{x.function} {t.sections.experienceConnector} {x.name}</div>
                     <div className="text-sm text-neutral-500 whitespace-nowrap ml-4">{x.date}</div>
                   </div>
                   <p className="text-sm text-neutral-700 mt-1">{x.desc}</p>
