@@ -1,13 +1,16 @@
 import { type AppType } from "next/app";
+import { useRouter } from "next/router";
 import NavBar from "~/components/NavBar";
 import { useEffect } from 'react';
 
 import "~/styles/globals.css";
 
 const MyApp: AppType = ({
-  Component, 
-  pageProps 
+  Component,
+  pageProps
 }) => {
+  const router = useRouter();
+
   useEffect(() => {
     const elements = document.querySelectorAll('.animate-on-scroll')
     const observer = new IntersectionObserver((entries) => {
@@ -20,7 +23,8 @@ const MyApp: AppType = ({
       });
     });
     elements.forEach((el) => observer.observe(el))
-  }, []);
+    return () => observer.disconnect();
+  }, [router.asPath]);
 
   return (
       <NavBar>

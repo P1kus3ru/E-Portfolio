@@ -1,22 +1,22 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import About from "~/sections/About";
+import Resume from "~/sections/Resume";
 import useTranslations from "~/i18n/useTranslations";
 
-const Home: NextPage = () => {
+const ResumePage: NextPage = () => {
   const t = useTranslations();
   return (
     <>
       <Head>
-        <title>Jona De Neve</title>
+        <title>{`Jona De Neve - ${t.nav.resume}`}</title>
         <meta name="description" content={t.meta.description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center">
-        <About />
+      <main className="flex min-h-screen flex-col items-center print:block">
+        <Resume />
       </main>
     </>
   );
 };
 
-export default Home;
+export default ResumePage;

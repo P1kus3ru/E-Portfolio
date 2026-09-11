@@ -1,9 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: corporate --default, business --prefersdark;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 .animate-on-scroll {
     opacity: 0;
@@ -20,4 +20,16 @@
 
 .contentCard:nth-child(2) {
     transition-delay: 200ms;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    * {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
 }

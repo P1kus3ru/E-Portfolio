@@ -1,25 +1,38 @@
 import { FaPython, FaReact, FaHtml5, FaJava, FaCss3Alt, FaGitAlt, FaJs, FaNodeJs, FaSwift, FaPhp } from 'react-icons/fa';
-import { SiKotlin, SiCsharp } from 'react-icons/si';
+import { SiKotlin, SiSharp } from 'react-icons/si';
+import { useRouter } from "next/router";
+import { DEFAULT_LOCALE, type Locale } from "~/i18n/locales";
 
-interface IconProps  { 
+interface IconProps  {
     size?: number
   }
 
+interface LanguageSkill {
+  name: string;
+  level: number;
+}
+
+const langsContent: Record<Locale, LanguageSkill[]> = {
+  "nl-BE": [
+    { name: 'Nederlands', level: 90 },
+    { name: 'Engels', level: 80 },
+    { name: 'Frans', level: 40 },
+  ],
+  "en-GB": [
+    { name: 'Dutch', level: 90 },
+    { name: 'English', level: 80 },
+    { name: 'French', level: 40 },
+  ],
+  fr: [
+    { name: 'Néerlandais', level: 90 },
+    { name: 'Anglais', level: 80 },
+    { name: 'Français', level: 40 },
+  ],
+};
+
 export default function useSkills() {
-    const langs = [
-        {
-          name: 'Nederlands',
-          level: 90,
-        },
-        {
-          name: 'Engels',
-          level: 70,
-        },
-        {
-          name: 'French',
-          level: 40,
-        },
-    ];
+    const { locale } = useRouter();
+    const langs = langsContent[(locale as Locale) ?? DEFAULT_LOCALE];
     const proglangs = [
         {
           name: 'React',
@@ -63,7 +76,7 @@ export default function useSkills() {
         },
         {
           name: 'C#',
-          Icon: ({size}:IconProps) => <SiCsharp size={size}/>,
+          Icon: ({size}:IconProps) => <SiSharp size={size}/>,
         },
         {
           name: 'PHP',
