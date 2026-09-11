@@ -12,7 +12,7 @@ const About = () => {
   
   return (
     <>
-      <section className="hero min-h-full py-16 w-full" id="about">
+      <section className="hero min-h-screen py-16 w-full" id="about">
         <div ref={refHero} className="hero-content flex-col md:flex-row md:gap-10">
           <Image 
           src="/images/Avatar.png"
@@ -35,12 +35,10 @@ const About = () => {
               <p className="mb-5">Student Elektronica-ICT bij Odisee</p>
               <div className="flex gap-5 justify-center md:justify-start">
                 {socials.map((x) => (
-                  <>
                   <a key={x.name} href={x.link} target="_blank" rel="noreferrer">
                       <x.Icon size={30}/>
                   </a>
-                  </>
-                ))} 
+                ))}
               </div>
           </div>
         </div>

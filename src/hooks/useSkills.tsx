@@ -1,5 +1,5 @@
 import { FaPython, FaReact, FaHtml5, FaJava, FaCss3Alt, FaGitAlt, FaJs, FaNodeJs, FaSwift, FaPhp } from 'react-icons/fa';
-import { SiKotlin, SiCsharp } from 'react-icons/si';
+import { SiKotlin, SiSharp } from 'react-icons/si';
 
 interface IconProps  { 
     size?: number
@@ -63,7 +63,7 @@ export default function useSkills() {
         },
         {
           name: 'C#',
-          Icon: ({size}:IconProps) => <SiCsharp size={size}/>,
+          Icon: ({size}:IconProps) => <SiSharp size={size}/>,
         },
         {
           name: 'PHP',

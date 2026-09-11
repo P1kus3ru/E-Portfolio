@@ -9,20 +9,16 @@ const Projects = () => {
           <div className="text-center">
               <h2 className="text-5xl font-bold mb-5">Projecten</h2>
               {types.map((x) => (
-                <>
                 <div key={x.type} className="flex flex-col md:flex-row justify-between mb-5">
                     <div className="flex-grow">
                         <h3 className="text-4xl font-semibold my-5">{x.type}</h3>
                         <div className="flex flex-wrap md:justify-center gap-5">
                         {x.projects.map((y) => (
-                            <>
-                                <Card key={y.name} title={y.name} date={y.date} content={y.desc}/>
-                            </>
+                            <Card key={y.name} title={y.name} date={y.date} content={y.desc}/>
                         ))}
                         </div>
                     </div>
                 </div>
-                </>
               ))}
           </div>
       </section>

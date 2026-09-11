@@ -10,9 +10,7 @@ const Experience = () => {
               <h2 className="text-5xl font-bold mb-5">Ervaring</h2>
                 <div className="flex flex-wrap md:justify-center gap-5">
                 {experience.map((x) => (
-                  <>
-                    <Card key={x.name} title={x.function + " bij " + x.name} date={x.date} content={x.desc} />
-                  </>
+                    <Card key={x.name + x.function} title={x.function + " bij " + x.name} date={x.date} content={x.desc} />
                 ))}
               </div>
           </div>

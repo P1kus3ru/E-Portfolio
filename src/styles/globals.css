@@ -1,9 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: corporate --default, business --prefersdark;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 .animate-on-scroll {
     opacity: 0;

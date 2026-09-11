@@ -13,12 +13,10 @@ const Skills = () => {
                     <h2 className="card-title">Talen</h2>
                     <div className="flex flex-col gap-5">
                       {langs.map((x)=>(
-                        <>
                         <div key={x.name} className="flex items-center justify-between">
                           <a>{x.name}</a>
                           <progress className="progress progress-primary w-56" value={x.level} max="100"></progress>
                         </div>
-                        </>
                       ))}
                     </div>
                   </div>
