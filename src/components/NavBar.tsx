@@ -17,6 +17,7 @@ const navItems = [
     { href: "/education", label: "Education" },
     { href: "/skills", label: "Skills" },
     { href: "/interests", label: "Interests" },
+    { href: "/resume", label: "Resume" },
 ];
 
 const NavBar = ({ children } : NavBarProps) => {
@@ -33,7 +34,7 @@ const NavBar = ({ children } : NavBarProps) => {
         <div className="drawer">
             <input ref={drawerRef} id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
-                <div className="flex flex-col">
+                <div className="flex flex-col print:hidden">
                     <div className="w-full navbar fixed top-0 z-10 bg-neutral text-neutral-content dark:bg-base-200 dark:text-base-content">
                         <div className="navbar-start">
                             <div className="flex-none lg:hidden">
@@ -62,7 +63,7 @@ const NavBar = ({ children } : NavBarProps) => {
                 </div>
                 {children}
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side print:hidden">
                 <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
                 <ul className="menu p-4 w-80 bg-base-100 text-lg">
                     <div className='flex flex-col gap-2'>

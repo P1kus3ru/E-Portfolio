@@ -16,7 +16,7 @@ export default function useSkills() {
           level: 70,
         },
         {
-          name: 'French',
+          name: 'Frans',
           level: 40,
         },
     ];

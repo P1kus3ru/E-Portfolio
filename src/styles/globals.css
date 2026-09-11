@@ -21,3 +21,15 @@
 .contentCard:nth-child(2) {
     transition-delay: 200ms;
 }
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    * {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}

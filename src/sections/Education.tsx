@@ -1,19 +1,5 @@
 import Card from "~/components/Card";
-
-function useEducation() {
-  return [
-    {
-      school: 'Odisee',
-      course: 'Bachelor Electronica-ICT',
-      date: 'September 2023 - Juni 2026',
-    },
-    {
-      school: 'HOGENT',
-      course: 'Bachelor Toegepaste Informatica',
-      date: 'September 2020 - Augustus 2023',
-    },
-  ]
-}
+import useEducation from "~/hooks/useEducation";
 
 const Education = () => {
   const educations = useEducation();
