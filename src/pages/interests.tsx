@@ -1,20 +1,20 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import About from "~/sections/About";
+import Interests from "~/sections/Interests";
 
-const Home: NextPage = () => {
+const InterestsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Jona De Neve</title>
+        <title>Jona De Neve - Interests</title>
         <meta name="description" content="E-Porfolio of Jona De Neve" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center">
-        <About />
+        <Interests />
       </main>
     </>
   );
 };
 
-export default Home;
+export default InterestsPage;
