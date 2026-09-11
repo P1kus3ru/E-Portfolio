@@ -5,7 +5,7 @@ const fr = {
     about: "À propos",
     experience: "Expérience",
     projects: "Projets",
-    education: "Formation",
+    education: "Qualifications",
     skills: "Compétences",
     interests: "Centres d'intérêt",
     resume: "CV",

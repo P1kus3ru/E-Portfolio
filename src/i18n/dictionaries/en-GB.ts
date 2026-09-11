@@ -5,7 +5,7 @@ const enGB = {
     about: "About",
     experience: "Experience",
     projects: "Projects",
-    education: "Education",
+    education: "Qualifications",
     skills: "Skills",
     interests: "Interests",
     resume: "Resume",

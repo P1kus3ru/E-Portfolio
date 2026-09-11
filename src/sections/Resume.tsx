@@ -1,16 +1,16 @@
 import Image from "next/image";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaBirthdayCake, FaDownload } from "react-icons/fa";
 import avatar from "../../public/images/Avatar.png";
-import useEducation from "~/hooks/useEducation";
 import useExperiences from "~/hooks/useExperiences";
 import usePersonalInfo from "~/hooks/usePersonalInfo";
 import useSkills from "~/hooks/useSkills";
 import useSocials from "~/hooks/useSocials";
 import useTranslations from "~/i18n/useTranslations";
+import useQualifications from "~/hooks/useQualifications";
 
 const Resume = () => {
   const info = usePersonalInfo();
-  const educations = useEducation();
+  const qualifications = useQualifications();
   const experience = useExperiences().filter((x) => x.important);
   const { langs, proglangs } = useSkills();
   const socials = useSocials();
@@ -37,12 +37,12 @@ const Resume = () => {
 
           <div className="flex flex-col gap-3 text-sm">
             <div className="flex items-center gap-3">
-              <FaMapMarkerAlt className="text-blue-300 shrink-0" />
-              <span>{info.address}</span>
-            </div>
-            <div className="flex items-center gap-3">
               <FaBirthdayCake className="text-blue-300 shrink-0" />
               <span>{info.birthdate}</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <FaMapMarkerAlt className="text-blue-300 shrink-0" />
+              <span>{info.address}</span>
             </div>
             <div className="flex items-center gap-3">
               <FaPhone className="text-blue-300 shrink-0" />
@@ -52,12 +52,16 @@ const Resume = () => {
               <FaEnvelope className="text-blue-300 shrink-0" />
               <span>{info.email}</span>
             </div>
-          </div>
-
-          <div className="flex gap-4 justify-center">
             {socials.map((x) => (
-              <a key={x.name} href={x.link} target="_blank" rel="noreferrer" className="text-white/80 hover:text-white">
-                <x.Icon size={20} />
+              <a
+                key={x.name}
+                href={x.link}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-3 break-all text-white/90 hover:text-white"
+              >
+                <span className="text-blue-300 shrink-0"><x.Icon size={16} /></span>
+                <span className="text-xs leading-snug">{x.link.replace(/^https?:\/\/(www\.)?/, "")}</span>
               </a>
             ))}
           </div>
@@ -98,11 +102,11 @@ const Resume = () => {
               {t.nav.education}
             </h2>
             <div className="flex flex-col gap-4">
-              {educations.map((x) => (
-                <div key={x.course} className="flex justify-between items-baseline">
+              {qualifications.map((x) => (
+                <div key={x.title} className="flex justify-between items-baseline">
                   <div>
-                    <div className="font-semibold">{x.course}</div>
-                    <div className="text-sm text-neutral-600">{x.school}</div>
+                    <div className="font-semibold">{x.title}</div>
+                    <div className="text-sm text-neutral-600">{x.institution}</div>
                   </div>
                   <div className="text-sm text-neutral-500 whitespace-nowrap ml-4">{x.date}</div>
                 </div>

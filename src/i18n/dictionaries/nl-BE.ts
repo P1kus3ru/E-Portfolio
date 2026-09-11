@@ -5,7 +5,7 @@ const nlBE = {
     about: "Over mij",
     experience: "Ervaring",
     projects: "Projecten",
-    education: "Opleiding",
+    education: "Kwalificaties",
     skills: "Vaardigheden",
     interests: "Interesses",
     resume: "CV",

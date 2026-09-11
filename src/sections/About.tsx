@@ -31,7 +31,7 @@ const About = () => {
                   <span className="text-primary"> De Neve</span>
               </h1>
               <div className="text-lg font-bold text-secondary mb-5 md:mb-2">
-                  <Link href="/resume">CV</Link> · {info.address} · {info.birthdate} · {info.phone} ·
+                  {info.birthdate} · {info.address} · {info.phone} ·
                   <a href={`mailto:${info.email}`}> {info.email}</a>
               </div>
               <p className="mb-5"></p>

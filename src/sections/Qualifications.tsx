@@ -1,9 +1,9 @@
 import Card from "~/components/Card";
-import useEducation from "~/hooks/useEducation";
+import useQualifications from "~/hooks/useQualifications";
 import useTranslations from "~/i18n/useTranslations";
 
-const Education = () => {
-  const educations = useEducation();
+const Qualifications = () => {
+  const qualifications = useQualifications();
   const t = useTranslations();
     return (
       <>
@@ -11,8 +11,8 @@ const Education = () => {
           <div className="text-center">
               <h2 className="text-5xl font-bold mb-5">{t.nav.education}</h2>
                 <div className="flex flex-wrap md:justify-center gap-5">
-                {educations.map((x) => (
-                    <Card key={x.course} title={x.course} date={x.date} content={x.school} />
+                {qualifications.map((x) => (
+                    <Card key={x.title} title={x.title} date={x.date} content={x.institution} />
                 ))}
               </div>
           </div>
@@ -21,4 +21,4 @@ const Education = () => {
     );
   };
   
-  export default Education;
+  export default Qualifications;

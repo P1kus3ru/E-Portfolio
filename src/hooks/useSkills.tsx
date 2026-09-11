@@ -15,17 +15,17 @@ interface LanguageSkill {
 const langsContent: Record<Locale, LanguageSkill[]> = {
   "nl-BE": [
     { name: 'Nederlands', level: 90 },
-    { name: 'Engels', level: 70 },
+    { name: 'Engels', level: 80 },
     { name: 'Frans', level: 40 },
   ],
   "en-GB": [
     { name: 'Dutch', level: 90 },
-    { name: 'English', level: 70 },
+    { name: 'English', level: 80 },
     { name: 'French', level: 40 },
   ],
   fr: [
     { name: 'Néerlandais', level: 90 },
-    { name: 'Anglais', level: 70 },
+    { name: 'Anglais', level: 80 },
     { name: 'Français', level: 40 },
   ],
 };
