@@ -5,5 +5,6 @@ export default function usePersonalInfo() {
     address: '9850 Deinze',
     phone: '0491599081',
     email: 'jona.de.neve@gmail.com',
+    drivingLicense: 'B',
   }
 }

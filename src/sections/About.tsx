@@ -3,10 +3,12 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 import usePersonalInfo from "~/hooks/usePersonalInfo";
 import useSocials from "~/hooks/useSocials";
+import useTranslations from "~/i18n/useTranslations";
 
 const About = () => {
   const socials = useSocials();
   const info = usePersonalInfo();
+  const t = useTranslations();
   const refHero = useRef<HTMLDivElement>(null)
   
   useEffect(() => {
@@ -32,9 +34,9 @@ const About = () => {
               </h1>
               <div className="text-lg font-bold text-secondary mb-5 md:mb-2">
                   {info.birthdate} · {info.address} · {info.phone} ·
-                  <a href={`mailto:${info.email}`}> {info.email}</a>
+                  <a href={`mailto:${info.email}`}> {info.email}</a> · {t.sections.drivingLicenseLabel} {info.drivingLicense}
               </div>
-              <p className="mb-5"></p>
+              <p className="mb-5">{t.sections.aboutMeText}</p>
               <div className="flex gap-5 justify-center md:justify-start">
                 {socials.map((x) => (
                   <a key={x.name} href={x.link} target="_blank" rel="noreferrer">

@@ -18,6 +18,11 @@ const nlBE = {
     programmingLanguagesHeading: "Programmeertalen",
     experienceConnector: "bij",
     resumeDownloadButton: "PDF downloaden",
+    aboutMeHeading: "Over mezelf",
+    aboutMeText:
+      "Ik ben op zoek naar een job in IT. Mijn focus lag op programmeren, maar met AI die steeds meer van het routinewerk overneemt, sta ik ook open voor andere IT-richtingen.",
+    softSkillsHeading: "Soft skills",
+    drivingLicenseLabel: "Rijbewijs",
   },
   languageSwitcherLabel: "Taal wijzigen",
 } satisfies Dictionary;

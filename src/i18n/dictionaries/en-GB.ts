@@ -18,6 +18,11 @@ const enGB = {
     programmingLanguagesHeading: "Programming languages",
     experienceConnector: "at",
     resumeDownloadButton: "Download PDF",
+    aboutMeHeading: "About me",
+    aboutMeText:
+      "I'm looking for a job in IT. My focus used to be programming, but with AI taking over more and more of the routine work, I'm also open to other IT directions.",
+    softSkillsHeading: "Soft skills",
+    drivingLicenseLabel: "Driving licence",
   },
   languageSwitcherLabel: "Change language",
 } satisfies Dictionary;

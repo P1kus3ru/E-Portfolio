@@ -12,6 +12,11 @@ interface LanguageSkill {
   level: number;
 }
 
+interface SoftSkill {
+  name: string;
+  desc: string;
+}
+
 const langsContent: Record<Locale, LanguageSkill[]> = {
   "nl-BE": [
     { name: 'Nederlands', level: 90 },
@@ -30,9 +35,31 @@ const langsContent: Record<Locale, LanguageSkill[]> = {
   ],
 };
 
+const softSkillsContent: Record<Locale, SoftSkill[]> = {
+  "nl-BE": [
+    {
+      name: 'Communicatie & klantgerichtheid',
+      desc: '3 jaar lesgeven aan Codefever, waarbij ik technische concepten helder uitleg aan cursisten.',
+    },
+  ],
+  "en-GB": [
+    {
+      name: 'Communication & client focus',
+      desc: '3 years teaching at Codefever, explaining technical concepts clearly to students.',
+    },
+  ],
+  fr: [
+    {
+      name: 'Communication & sens du client',
+      desc: "3 ans d'enseignement chez Codefever, où j'explique des concepts techniques de façon claire aux participants.",
+    },
+  ],
+};
+
 export default function useSkills() {
     const { locale } = useRouter();
     const langs = langsContent[(locale as Locale) ?? DEFAULT_LOCALE];
+    const softSkills = softSkillsContent[(locale as Locale) ?? DEFAULT_LOCALE];
     const proglangs = [
         {
           name: 'React',
@@ -83,5 +110,5 @@ export default function useSkills() {
           Icon: ({size}:IconProps) => <FaPhp size={size}/>,
         },
     ];
-    return {langs, proglangs}
+    return {langs, proglangs, softSkills}
 }

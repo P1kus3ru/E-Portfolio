@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaBirthdayCake, FaDownload } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaBirthdayCake, FaDownload, FaIdCard } from "react-icons/fa";
 import avatar from "../../public/images/Avatar.png";
 import useExperiences from "~/hooks/useExperiences";
 import usePersonalInfo from "~/hooks/usePersonalInfo";
@@ -12,7 +12,7 @@ const Resume = () => {
   const info = usePersonalInfo();
   const qualifications = useQualifications();
   const experience = useExperiences().filter((x) => x.important);
-  const { langs, proglangs } = useSkills();
+  const { langs, proglangs, softSkills } = useSkills();
   const socials = useSocials();
   const t = useTranslations();
 
@@ -51,6 +51,10 @@ const Resume = () => {
             <div className="flex items-center gap-3 break-all">
               <FaEnvelope className="text-blue-300 shrink-0" />
               <span>{info.email}</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <FaIdCard className="text-blue-300 shrink-0" />
+              <span>{t.sections.drivingLicenseLabel} {info.drivingLicense}</span>
             </div>
             {socials.map((x) => (
               <a
@@ -94,9 +98,30 @@ const Resume = () => {
               ))}
             </div>
           </div>
+
+          <div>
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-blue-300 mb-3">
+              {t.sections.softSkillsHeading}
+            </h2>
+            <div className="flex flex-col gap-2">
+              {softSkills.map((x) => (
+                <div key={x.name} className="text-sm">
+                  <div className="font-semibold">{x.name}</div>
+                  <div className="text-xs text-white/70">{x.desc}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </aside>
 
         <main className="flex-1 p-[12mm] flex flex-col gap-8">
+          <section>
+            <h2 className="text-lg font-bold uppercase tracking-wide text-blue-700 border-b-2 border-blue-700 pb-1 mb-4">
+              {t.sections.aboutMeHeading}
+            </h2>
+            <p className="text-sm text-neutral-700">{t.sections.aboutMeText}</p>
+          </section>
+
           <section>
             <h2 className="text-lg font-bold uppercase tracking-wide text-blue-700 border-b-2 border-blue-700 pb-1 mb-4">
               {t.nav.qualifications}

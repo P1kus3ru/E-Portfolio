@@ -16,6 +16,10 @@ export interface Dictionary {
     programmingLanguagesHeading: string;
     experienceConnector: string;
     resumeDownloadButton: string;
+    aboutMeHeading: string;
+    aboutMeText: string;
+    softSkillsHeading: string;
+    drivingLicenseLabel: string;
   };
   languageSwitcherLabel: string;
 }
