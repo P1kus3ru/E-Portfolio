@@ -31,15 +31,15 @@ const content: Record<Locale, ExperienceItem[]> = {
     {
       key: 'Euricom2023',
       name: 'Euricom',
-      function: 'Stagair',
+      function: 'Stagiair',
       desc: 'In mijn stage heb ik voor Euricom het interne project eKudo gerealiseerd.',
       date: 'Februari 2023 - Mei 2023',
-      important: false,
+      important: true,
     },
     {
       key: 'QityStage',
       name: 'Qity',
-      function: 'Stagair',
+      function: 'Stagiair',
       desc: 'Voor mijn opleiding electronica-ICT heb ik een stage gelopen bij Qity. Hier maakte ik een universele kabeltester.',
       date: 'Februari 2026 - Mei 2026',
       important: true,
@@ -50,7 +50,7 @@ const content: Record<Locale, ExperienceItem[]> = {
       function: 'Zomerjob',
       desc: 'In de zomer van 2026 heb ik een zomerjob gedaan bij Qity. Hier werkte ik aan een Atlassian Forge app.',
       date: 'Augustus 2026 - September 2026',
-      important: false,
+      important: true,
     },
   ],
   "en-GB": [

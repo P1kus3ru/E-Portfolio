@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaBirthdayCake, FaDownload, FaIdCard } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaBirthdayCake, FaDownload, FaIdCard, FaGlobe } from "react-icons/fa";
 import avatar from "../../public/images/Avatar.png";
 import useExperiences from "~/hooks/useExperiences";
 import usePersonalInfo from "~/hooks/usePersonalInfo";
@@ -7,6 +7,8 @@ import useSkills from "~/hooks/useSkills";
 import useSocials from "~/hooks/useSocials";
 import useTranslations from "~/i18n/useTranslations";
 import useQualifications from "~/hooks/useQualifications";
+
+const PORTFOLIO_URL = "https://e-portfolio-jonadn.vercel.app";
 
 const Resume = () => {
   const info = usePersonalInfo();
@@ -56,6 +58,15 @@ const Resume = () => {
               <FaIdCard className="text-blue-300 shrink-0" />
               <span>{t.sections.drivingLicenseLabel} {info.drivingLicense}</span>
             </div>
+            <a
+              href={PORTFOLIO_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 break-all text-white/90 hover:text-white"
+            >
+              <span className="text-blue-300 shrink-0"><FaGlobe size={16} /></span>
+              <span className="text-xs leading-snug">{PORTFOLIO_URL.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}</span>
+            </a>
             {socials.map((x) => (
               <a
                 key={x.name}
