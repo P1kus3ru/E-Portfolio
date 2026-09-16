@@ -16,10 +16,10 @@ export default function useSocials() {
         link: 'https://github.com/P1kus3ru',
         Icon: ({size}:SocialProps) => <FaGithub size={size} />,
       },
-      {
-        name: 'Facebook',
-        link: 'https://www.facebook.com/DeNeveJona',
-        Icon: ({size}:SocialProps) => <FaFacebook size={size} />,
-      },
+      // {
+      //   name: 'Facebook',
+      //   link: 'https://www.facebook.com/DeNeveJona',
+      //   Icon: ({size}:SocialProps) => <FaFacebook size={size} />,
+      // },
     ];
 }
